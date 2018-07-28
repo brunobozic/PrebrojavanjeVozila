@@ -25,15 +25,15 @@ namespace PrebrojavanjeKatogorijaVozila
         {
             var retVal = CategoryEnum.Unknown;
 
-            if (length > 0 && length < 4.5)
+            if (length > 0 && length <= 4.5)
             {
                 retVal = CategoryEnum.Kategorija1;
             }
-            else if (length > 4.5 && length < 6.4)
+            else if (length > 4.5 && length <= 6.4)
             {
                 retVal = CategoryEnum.Kategorija2;
             }
-            else if (length > 6.4 && length < 14.6)
+            else if (length > 6.4 && length <= 14.6)
             {
                 retVal = CategoryEnum.Kategorija3;
             }
